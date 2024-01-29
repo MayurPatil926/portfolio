@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .container{
+            color:white;
+        }
+        .navbar-nav .nav-link {
+            padding: 0.5rem 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .profile-image {
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .about-text {
+            padding: 50px;
+            color: white;
+        }
+        .about-section {
+            margin: 30px;
+            border: 2px solid #343a40;
+            color: white;
+            border-radius: 10px;
+        }
+        .about-title {
+            font-size: 2rem;
+            font-weight: 1000;
+            margin-bottom: 20px;
+        }
+        .about-details {
+            font-size: 1.2rem;
+        }
+        .glass-element {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        .skills-container {
+            margin: 1 10px;
+            margin-left: 10px !important;
+            display: flex;
+            margin-top: 20px;
+        }
+        .skill-cube {
+            width: 100%;
+            height: 100%;
+            margin-right: 20px;
+        }
+        .cube {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform ease-in-out 0.8s;
+        }
+        .cube .face {
+            position: absolute;
+            .skills-container {
+                display: flex;
+                padding: 0 15px;
+                align-items: center;
+                margin: 50px;
+            }
+            .skill-cube {
+                perspective: 1000px;
+                width: 100%;
+                height: 100%;
+                margin-right: 20px;
+            }
+            .cube {
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: transform 1s;
+            }
+            .cube .face {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid #333;
+                background-color: rgba(255, 255, 255, 0.8);
+        }
+            .cube .front {
+                transform: translateZ(50px);
+            }
+            .cube .back {
+                transform: rotateY(180deg) translateZ(50px);
+            }
+            .skill-cube:hover .cube {
+                transform: rotateY(180deg);
+            }
+            color: white;
+            border: 2px solid #333;
+            background-color: #333333;
+        }
+        .cube .front {
+            transform: translateZ(50px);
+            padding: 15px;
+            width: 350px;
+            height: 200px;
+        }
+        .cube .back {
+            transform: rotateY(180deg) translateZ(50px);
+            padding: 15px;
+            width: 350px;
+            height: 200px;
+        }
+
+        .skill-cube:hover .cube {
+            transform: rotateY(180deg);
+        }
+
+        .bold-typography-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .bold-heading {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .expressive-text {
+            font-size: 1.5rem;
+            color: #7b7878;
+        }
+        .ending-section {
+    background-color: #343a40; 
+}
+
+.ending-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ending-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.ending-section button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+footer {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+footer h5 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #cfb9b9;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+@media (max-width: 767px) {
+  body {
+    display: none;
+    background: #333333;
+  }
+}
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container new">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/im2.png" alt="Logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center about-text">
+                    <div>
+                        <h1>Mayur Patil,</h1>
+                        <h4>Shopify Website developer </h4>
+                        <p>Experienced Shopify developer transitioning expertise to Frontend technologies.</p>
+                        <p> Equipped with 1yr+ in Shopify, actively pursuing proficiency in Shopify Design Expert and
+                            form customization. Passionate about crafting efficient, scalable solutions and eager to
+                            contribute value to dynamic development teams.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 p-0">
+                    <div class="profile-image">
+                        <img src="/png_1.png" alt="" style="height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="glass-element">
+        <h2>About Me</h2>
+        <h5>Shopify Developer || Frontend developer.</h5>
+        <p>Experienced Shopify developer transitioning expertise to Frontend technologies. Equipped with 1yr+ in
+            Shopify, actively pursuing proficiency in Shopify Design Expert and form customization. Passionate about
+            crafting efficient, scalable solutions and eager to contribute value to dynamic development teams. Seeking
+            opportunities to leverage Shopify background and emerging Learning skills for impactful projects. Open to
+            collaboration and new challenges in the Website development ecosystem..</p>
+    </section>
+    <section class="bold-typography-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="bold-heading">Hi! My Skills and Instrest</h1>
+                    <p class="expressive-text">Currently, I am working as a shopify developer but i want be a full stack developer. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section style="height: 300px;">
+    <div class="row new3d>
+        <div class="col-lg-12">
+            <div class="skills-container">
+                <div class="skill-cube">
+                    <div class="cube">
+                        <div class="face front">
+                            <h1>Website Development: </h1>
+                            <p>Skills:- HTML, CSS, JAVASCRIPT,BOOTSTRAP </p>
+                        </div>
+                        <div class="face back">
+                            <p>layed a pivotal role in creating and customizing Shopify websites, employing a range of
+                                tools,
+                                languages, and techniques to deliver high-quality, visually appealing, and functional
+                                online stores. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cube">
+                    <div class="cube">
+                        <div class="face front">
+                            <h1>Backend languages: </h1>
+                            <p>Skills:- PHP, PYTHON, LARAVEL, FLASK,MYSQL </p>
+                        </div>
+                        <div class="face back">
+                            <h4>Digiweave Technology Company. <br>
+                                Position: Shopify Web Developer. <br>
+                                Experience: <u>1year</u> </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cube">
+                    <div class="cube">
+                        <div class="face front">
+                            <h1>project Management: </h1>
+                            <p>have a understanding of time Management and complete task before time</p>
+                        </div>
+                        <div class="face back">
+                            <h5>Managed timelines and deliverables effectively, ensuring projects were completed within
+                                set
+                                deadlines while maintaining high standards of quality. </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cube">
+                    <div class="cube">
+                        <div class="face front">
+                            <h1>Team work and Team handle:</h1>
+                            <p></p>
+                        </div>
+                        <div class="face back"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem eos
+                            ea dignissimos vel quisquam impedit dolorem aperiam ut, quae ipsa sint magnam</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ending-section bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Ready to start your project?</h2>
+                <p class="lead">Let's work together to bring your ideas to life.</p>
+                <button class="btn btn-primary btn-lg">Contact Me</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class=" text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>Contact Information</h5>
+                <p>Email: mayurpatil982001@gmail.com</p>
+                <p>Phone: +919326997626</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <h5>Follow Me</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#">Twitter</a>    </li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/mayur.patil_9/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
